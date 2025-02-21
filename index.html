@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanu Kumari - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>Tanu Kumari - Portfolio</header>
+    
+    <div class="image-section">
+        <img src="profile.png" alt="Tanu Kumari">
+    </div>
+    <br>
+    <br>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const bioSection = document.createElement("div");
+            bioSection.classList.add("section_1");
+            bioSection.innerHTML = `
+                <p id="bio">I am a passionate developer who enjoys working with web technologies and creating user-friendly applications.</p>
+            `;
+            document.querySelector(".image-section").insertAdjacentElement("afterend", bioSection);
+        });
+    </script>
+    <div class="button">
+    <a href="https://www.linkedin.com/in/tanu-kumari-7b0b3b1b4/">LinkedIn</a>
+    <a href="download-resume_250204_194417.pdf" download>Download Resume</a>
+    </div>
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am an organized, efficient, and hardworking person. I love learning new skills and taking on challenges.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Skills</h2>
+        <p>C / C++, JavaScript, HTML / CSS, Basic Python, Basic Java</p>
+    </div>
+    
+    <div class="section">
+        <h2>Education</h2>
+        <p>BCA at L.N Mishra College (2021-2024)</p>
+        <p>12th at Navrashtra +2 School (2018-2020)</p>
+        <p>10th at Scholar's India Sr. Sec. School (2017-2018)</p>
+    </div>
+    <div class="section">
+        <h2>Projects</h2>
+        <p><strong>Portfolio Website</strong> - A personal portfolio showcasing my skills and work.</p>
+        <p><strong>To-Do List App</strong> - A simple web app to manage daily tasks using JavaScript.</p>
+    </div>
+    
+    <div class="section contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:tannukumarichoti@gmail.com">tannukumarichoti@gmail.com</a></p>
+        <p>Phone: +91 9525929337</p>
+    </div>
+    <footer>
+        © 2024 Tanu Kumari. All Rights Reserved.
+    </footer>
+</body>
+</html>
