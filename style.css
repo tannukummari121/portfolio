@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    overflow-x: hidden;
+    color: #333;
+}
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    animation: slideDown 1s ease-in-out;
+}
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    transition: transform 0.3s;
+}
+.section:hover {
+    transform: scale(1.05);
+}
+.section_1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 900;
+}
+.contact a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+.image-section {
+    position: relative;
+    display: inline-block;
+}
+.image-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.image-section a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.image-section:hover a {
+    opacity: 1;
+}
+.button a {
+    background: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+button,a:hover {
+    zoom: 1;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .section {
+        max-width: 90%;
+        padding: 15px;
+    }
+    header {
+        font-size: 20px;
+    }
+}
